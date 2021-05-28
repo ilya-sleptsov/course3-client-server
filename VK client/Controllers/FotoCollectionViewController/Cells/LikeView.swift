@@ -2,7 +2,7 @@
 //  LikeView.swift
 //  VK client
 //
-//  Created by Илья Слепцов on 07.05.2021.
+//  Created by Илья Слепцов on 04.05.2021.
 //
 
 import UIKit

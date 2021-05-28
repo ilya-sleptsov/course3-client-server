@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
         guard let login = self.loginTextField.text,
               let password = self.passwordTextField.text,
               login.trimmingCharacters(in: .whitespacesAndNewlines) == "admin",
-              password.trimmingCharacters(in: .whitespacesAndNewlines) == "1234"
+              password.trimmingCharacters(in: .whitespacesAndNewlines) == "1234567"
         else {showAlert(alertText: "Wrong login or password")
             return
         }

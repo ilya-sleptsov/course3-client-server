@@ -10,9 +10,13 @@ import UIKit
 class FotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var fotoImage: UIImageView!
-
+    @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    
+    
+    var isLiked = false
     var savedImage: UIImage?
-    var pressCount = true
+   
     
     func clearCell() {
         fotoImage.image = nil
@@ -21,7 +25,7 @@ class FotoCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        clearCell()
     }
     override func prepareForReuse() {
         clearCell()
@@ -32,35 +36,20 @@ class FotoCollectionViewCell: UICollectionViewCell {
         fotoImage.translatesAutoresizingMaskIntoConstraints = true
     }
     
-    @objc func reactOnTap() {
-        
-        if pressCount {
-        
-        let translation = CGAffineTransform(scaleX: 2, y: 2)
-
-        fotoImage.transform = translation
-            
-            
-        } else {
-            fotoImage.transform = .identity
+    
+    func pressLikeButton(_ sender: Any){
+            if isLiked {
+                likeLabel.text = "1"
+                likeButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                likeButton.tintColor = UIColor.systemRed
+            }
+            else {
+                likeLabel.text = "0"
+                likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
+                likeButton.tintColor = UIColor.black
+            }
+            isLiked = !isLiked
         }
-        
-        pressCount = !pressCount
+    }
 
-  
-    
-    
-//    func collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//
-//        return CGFloat(10)
-//
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//
-//        return CGFloat(10)
-//    }
-
-}
-}
 

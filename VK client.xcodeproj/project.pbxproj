@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D03DA36626384B8900C576A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA36526384B8900C576A8 /* ViewController.swift */; };
-		D03DA36C2645234800C576A8 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA36B2645234800C576A8 /* LikeView.swift */; };
+		D03DA36A264168EB00C576A8 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DA369264168EB00C576A8 /* LikeView.swift */; };
+		D049577126603BD2009FEBC3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049577026603BD2009FEBC3 /* Session.swift */; };
 		D06731E8262457700084557F /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06731E7262457700084557F /* FriendTableViewCell.swift */; };
 		D06731EB2627624A0084557F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06731EA2627624A0084557F /* TabBarController.swift */; };
 		D06731EF2627633F0084557F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06731EE2627633F0084557F /* User.swift */; };
@@ -33,7 +34,8 @@
 
 /* Begin PBXFileReference section */
 		D03DA36526384B8900C576A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "VK client/ViewController.swift"; sourceTree = SOURCE_ROOT; };
-		D03DA36B2645234800C576A8 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		D03DA369264168EB00C576A8 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		D049577026603BD2009FEBC3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D06731E7262457700084557F /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		D06731EA2627624A0084557F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D06731EE2627633F0084557F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		D0673201262F25940084557F /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
 		D06732082630C85C0084557F /* FotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoCollectionViewController.swift; sourceTree = "<group>"; };
 		D067320C2631CC510084557F /* FotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		D067320D2631CC510084557F /* FotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FotoCollectionViewCell.xib; path = "VK client/Controllers/FotoCollectionViewController/Cells/FotoCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		D067320D2631CC510084557F /* FotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		D06732122631E6060084557F /* MyGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupController.swift; sourceTree = "<group>"; };
 		D06732172631E9B00084557F /* AllGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupController.swift; sourceTree = "<group>"; };
 		D096242F261C9EBB009D33EE /* VK client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D049576F26603B0C009FEBC3 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				D049577026603BD2009FEBC3 /* Session.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
 		D06731ED262762A20084557F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 			children = (
 				D067320C2631CC510084557F /* FotoCollectionViewCell.swift */,
 				D067320D2631CC510084557F /* FotoCollectionViewCell.xib */,
+				D03DA369264168EB00C576A8 /* LikeView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 		D0962431261C9EBB009D33EE /* VK client */ = {
 			isa = PBXGroup;
 			children = (
+				D049576F26603B0C009FEBC3 /* Sessions */,
 				D06731ED262762A20084557F /* Model */,
 				D0962432261C9EBB009D33EE /* AppDelegate.swift */,
 				D03DA36526384B8900C576A8 /* ViewController.swift */,
@@ -168,7 +180,6 @@
 				D06731E7262457700084557F /* FriendTableViewCell.swift */,
 				D0962436261C9EBB009D33EE /* LoginViewController.swift */,
 				D0962438261C9EBB009D33EE /* Main.storyboard */,
-				D03DA36B2645234800C576A8 /* LikeView.swift */,
 				D06731FD262F24B30084557F /* Controllers */,
 				D06731EA2627624A0084557F /* TabBarController.swift */,
 				D06731F7262E1B270084557F /* Setup.swift */,
@@ -259,12 +270,13 @@
 				D06731F52627687F0084557F /* DataStorage.swift in Sources */,
 				D06731FB262F246C0084557F /* FriendsTableViewController.swift in Sources */,
 				D06732132631E6060084557F /* MyGroupController.swift in Sources */,
+				D049577126603BD2009FEBC3 /* Session.swift in Sources */,
 				D06732182631E9B00084557F /* AllGroupController.swift in Sources */,
 				D06731EF2627633F0084557F /* User.swift in Sources */,
 				D0962435261C9EBB009D33EE /* SceneDelegate.swift in Sources */,
 				D06732092630C85C0084557F /* FotoCollectionViewController.swift in Sources */,
 				D06731EB2627624A0084557F /* TabBarController.swift in Sources */,
-				D03DA36C2645234800C576A8 /* LikeView.swift in Sources */,
+				D03DA36A264168EB00C576A8 /* LikeView.swift in Sources */,
 				D06731F8262E1B270084557F /* Setup.swift in Sources */,
 				D03DA36626384B8900C576A8 /* ViewController.swift in Sources */,
 				D06731E8262457700084557F /* FriendTableViewCell.swift in Sources */,

@@ -178,37 +178,11 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jC8-cn-7Q4">
-                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="130"/>
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wv2-PZ-sMB">
-                                    <rect key="frame" x="0.0" y="0.0" width="145.5" height="130"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-mM-4Dq">
-                                            <rect key="frame" x="58" y="100" width="87.5" height="30"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdu-Cv-2bc" userLabel="likeLabel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqR-0T-hIf" userLabel="likeButton">
-                                                    <rect key="frame" x="41.5" y="0.0" width="46" height="30"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="likeButton:" destination="rwl-pk-R44" eventType="touchUpInside" id="342-nc-JU8"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="GhW-mM-4Dq" secondAttribute="bottom" id="3kx-Uw-DpW"/>
-                                        <constraint firstItem="GhW-mM-4Dq" firstAttribute="leading" secondItem="Wv2-PZ-sMB" secondAttribute="leading" constant="58" id="Dy2-NC-922"/>
-                                        <constraint firstAttribute="trailing" secondItem="GhW-mM-4Dq" secondAttribute="trailing" id="QRB-5z-jCR"/>
-                                        <constraint firstItem="GhW-mM-4Dq" firstAttribute="top" secondItem="Wv2-PZ-sMB" secondAttribute="top" constant="100" id="R2e-uO-wpe"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
                             </collectionViewCell>
                         </cells>
@@ -221,7 +195,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pe-6R-63V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124.6376811594205" y="-313.39285714285711"/>
+            <point key="canvasLocation" x="2125" y="-313"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="2Vp-nC-vCw">

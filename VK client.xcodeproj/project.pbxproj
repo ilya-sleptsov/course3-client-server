@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,8 @@
 		D067320F2631CC510084557F /* FotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D067320D2631CC510084557F /* FotoCollectionViewCell.xib */; };
 		D06732132631E6060084557F /* MyGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06732122631E6060084557F /* MyGroupController.swift */; };
 		D06732182631E9B00084557F /* AllGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06732172631E9B00084557F /* AllGroupController.swift */; };
+		D08EEFF72667B63E00E8C2D9 /* VKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EEFF62667B63E00E8C2D9 /* VKService.swift */; };
+		D08EEFF92667B96C00E8C2D9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EEFF82667B96C00E8C2D9 /* AuthViewController.swift */; };
 		D0962433261C9EBB009D33EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0962432261C9EBB009D33EE /* AppDelegate.swift */; };
 		D0962435261C9EBB009D33EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0962434261C9EBB009D33EE /* SceneDelegate.swift */; };
 		D0962437261C9EBB009D33EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0962436261C9EBB009D33EE /* LoginViewController.swift */; };
@@ -54,6 +56,8 @@
 		D067320D2631CC510084557F /* FotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		D06732122631E6060084557F /* MyGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupController.swift; sourceTree = "<group>"; };
 		D06732172631E9B00084557F /* AllGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupController.swift; sourceTree = "<group>"; };
+		D08EEFF62667B63E00E8C2D9 /* VKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKService.swift; sourceTree = "<group>"; };
+		D08EEFF82667B96C00E8C2D9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D096242F261C9EBB009D33EE /* VK client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0962432261C9EBB009D33EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0962434261C9EBB009D33EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +88,6 @@
 				3C4E26E0FCBD4F07ECA2E4D8 /* Pods-VK client.debug.xcconfig */,
 				E5B2EC15A09FC1D58993558A /* Pods-VK client.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				D022D22926651E3700EE8910 /* NetworkViewController.swift */,
+				D08EEFF62667B63E00E8C2D9 /* VKService.swift */,
+				D08EEFF82667B96C00E8C2D9 /* AuthViewController.swift */,
 			);
 			path = "Lesson 2";
 			sourceTree = "<group>";
@@ -346,11 +351,13 @@
 				D067320E2631CC510084557F /* FotoCollectionViewCell.swift in Sources */,
 				D0962437261C9EBB009D33EE /* LoginViewController.swift in Sources */,
 				D0962433261C9EBB009D33EE /* AppDelegate.swift in Sources */,
+				D08EEFF72667B63E00E8C2D9 /* VKService.swift in Sources */,
 				D0673202262F25940084557F /* FriendsTableViewCell.swift in Sources */,
 				D06731F52627687F0084557F /* DataStorage.swift in Sources */,
 				D06731FB262F246C0084557F /* FriendsTableViewController.swift in Sources */,
 				D06732132631E6060084557F /* MyGroupController.swift in Sources */,
 				D049577126603BD2009FEBC3 /* Session.swift in Sources */,
+				D08EEFF92667B96C00E8C2D9 /* AuthViewController.swift in Sources */,
 				D06732182631E9B00084557F /* AllGroupController.swift in Sources */,
 				D06731EF2627633F0084557F /* User.swift in Sources */,
 				D0962435261C9EBB009D33EE /* SceneDelegate.swift in Sources */,

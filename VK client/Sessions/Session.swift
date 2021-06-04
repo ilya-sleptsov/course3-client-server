@@ -7,13 +7,15 @@
 
 import UIKit
 
-class Session: UIViewController {
-
-    var token: String = ""
-    var userID: Int = 0
+class Session: NSObject {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    static let shared = Session()
+    
+    private override init() {
+        super.init()
     }
-
+    
+        var token: String = ""
+        var userID: Int = 0
+    
 }

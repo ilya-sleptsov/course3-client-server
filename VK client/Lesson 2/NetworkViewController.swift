@@ -12,6 +12,9 @@ class NetworkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //VKService = VKService()
+        forthRequest()
 
     }
     
@@ -63,9 +66,14 @@ class NetworkViewController: UIViewController {
     
     func thirdRequest() {
         
+        AF.request("http://samples.openweathermap.org/data/2.5/forecast?q=Moscow,DE&appid=b1b15e88fa797225412429c1c50c122a1)").responseJSON { response in
+            print(response.value as Any)
+        }
     }
     
     func forthRequest() {
+        
+        //VKService.getFriendsList(VKService)
         
     }
     
